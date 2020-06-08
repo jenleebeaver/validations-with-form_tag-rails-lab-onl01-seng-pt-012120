@@ -4,7 +4,7 @@
 
   <div class="field">
     <%= label_tag "title", "Title" %>
-    <%= text_field_tag "title", @post.title %>
+    <%= text_field_tag "title", @post.name %>
   </div>
 
   <div class="field">
@@ -23,5 +23,5 @@
     <%= text_area_tag "content", @post.content %>
   </div>
   <%= submit_tag "Update" %>
-  
+
 <% end %>
