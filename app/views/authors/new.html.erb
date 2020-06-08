@@ -18,12 +18,12 @@
     <%= text_field_tag "name", @author.name %>
   </div>
 
-  <div class="<%='field_with_errors' if @author.errors[:name]%>">
+  <div class="<%='field_with_errors' if @author.errors[:email]%>">
     <%= label_tag "email", "Email" %>
     <%= text_field_tag "email", @author.email %>
   </div>
 
-  <div class="<%='field_with_errors' if @author.errors[:name]%>">
+  <div class="<%='field_with_errors' if @author.errors[:phone_number]%>">
     <%= label_tag "phone_number", "Phone Number" %>
     <%= text_field_tag "phone_number", @author.phone_number %>
   </div>
